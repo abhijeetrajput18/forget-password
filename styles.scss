@@ -1,0 +1,428 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./theme/base/font.scss";
+
+a {
+  @include Montt-semi-bold-font;
+  color: #084e8e;
+}
+
+.flex{
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+    background: #C4C4C4;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #084E8E;;
+    border-radius: 10px;
+  }
+}
+
+//FONT STYLING
+.mat-h1,
+.mat-headline,
+.mat-typography h1 {
+  font: unset;
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 95.62px;
+}
+
+.mat-h1,
+.mat-headline,
+.mat-typography h2 {
+  font: unset;
+  font-family: "Montserrat Semi Bold", sans-serif;
+  font-size: 48px;
+}
+
+.mat-h1, .mat-headline, .mat-typography h3{
+  font: unset;
+  font-family: 'Montserrat Semi Bold', sans-serif;
+  font-size: 32px;
+}
+
+.mat-h5, .mat-typography h5{
+  font-family: 'Montserrat Semi Bold', sans-serif;
+  font-size: 24px;
+}
+
+.mat-h3,
+.mat-typography h3 {
+  font-family: "Montserrat Semi Bold", sans-serif;
+  font-size: 22px;
+}
+
+.mat-h5,
+.mat-typography h6 {
+  font-family: "Montserrat Semi Bold", sans-serif;
+  font-size: 14px;
+}
+
+// <p> tag
+.mat-typography {
+  font: unset;
+  font-family: "Montserrat Regular", sans-serif;
+  letter-spacing: normal;
+}
+
+// TAB STYLING
+.mat-tab-group {
+  .mat-tab-body-wrapper {
+    padding: 0 55px;
+  }
+}
+
+.mat-tab-label,
+.mat-tab-link {
+  font-family: "Montserrat Semi Bold", sans-serif;
+  font-size: 14px;
+}
+
+.container1 {
+  .mat-tab-labels {
+    display: flex;
+    flex-direction: column;
+  }
+  .mat-tab-group {
+    flex-direction: row !important;
+  }
+  .mat-tab-header {
+    border-bottom: none !important;
+  }
+  .mat-tab-header-pagination {
+    display: none !important;
+  }
+  .mat-tab-labels {
+    flex-direction: column !important;
+  }
+  .mat-ink-bar {
+    height: 100% !important;
+    left: 98% !important;
+  }
+  .mat-tab-body-wrapper {
+    flex: 1 1 auto !important;
+  }
+  .mat-tab-label {
+    justify-content: left !important;
+    padding: 0 !important;
+  }
+
+  .mat-tab-label-content {
+    font-size: 18px;
+  }
+
+  .mat-tab-body {
+    min-height: 315px;
+  }
+}
+
+.mat-tab-label-active{
+  color: #084E8E;
+}
+
+// mat-stepper styling
+.mat-stepper-horizontal-line {
+  border-bottom: 2px dashed #0a6ada;
+}
+
+.mat-step-label-selected {
+  color: #084E8E !important;
+}
+
+.mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element{
+  background-color: #084E8E !important ;
+}
+
+// .mat-step-header.cdk-program-focused.mat-step-header:hover:not([aria-disabled]){
+//   background-color: unset !important;
+// }
+
+.mat-step-icon {
+  display: none;
+}
+
+.mat-stepper-horizontal-line {
+  flex: unset !important;
+  min-width: 7% !important;
+  width: 10% !important;
+}
+
+// .mat-step-label-active{
+//   color: #0A6ADA !important;
+// }
+
+// Mat-checkbox Styling
+.mat-checkbox {
+  font: unset;
+  font-family: "Montserrat Regular", sans-serif;
+  letter-spacing: normal;
+}
+
+// Mat-ink-bar styling
+.container1 .mat-ink-bar {
+  max-height: 120px;
+}
+
+.mat-ink-bar {
+  bottom: unset;
+  top: 0;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: #c0c0c0;
+}
+
+// Button styling
+button {
+  &.primary-btn {
+    background-color: #084e8e;
+    border-radius: 20px;
+    padding: 19px 64px;
+    color: white;
+  }
+
+  &.secondary-btn {
+    font-family: "Montserrat Semi Bold", sans-serif;
+    font-size: 1rem;
+    background-color:#0A6ADA;
+    border-radius: 20px;
+    // padding: 19px 64px;
+    color: white;
+    width: 15rem;
+    height: 3rem;
+    margin-top: 2rem;
+  }
+}
+
+//Input styling
+.mat-form-field {
+  font: unset;
+  font-family: "Montserrat Regular", sans-serif;
+  letter-spacing: normal;
+  .mat-form-field-underline {
+    display: none;
+  }
+
+  .mat-form-field-wrapper {
+    width: 100%;
+  }
+
+  input {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+
+  textarea {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+}
+
+.custom-input {
+  // width: 100%;
+
+  fieldset {
+    border: unset;
+    border-radius: 10px;
+    background: #f5f3f3;
+  }
+
+  legend {
+    background: #f5f3f3;
+    border-radius: 17%;
+    padding: 5px;
+    font-size: 12px;
+    margin-left: 35px;
+  }
+
+  input {
+    border: none;
+    background: #f5f3f3;
+    width: 90%;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+  }
+
+  textarea {
+    border: none;
+    background: #f5f3f3;
+    width: 90%;
+  }
+}
+
+// ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{
+//   background-color:#084E8E;
+// }
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: unset !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: radio; /* Chrome, Safari, Opera */
+  -moz-appearance: radio; /* Firefox */
+  -ms-appearance: radio; /* not currently supported */
+}
+
+// .mat-checkbox{
+//   -webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+//   -moz-appearance: checkbox;    /* Firefox */
+//   -ms-appearance: checkbox;     /* not currently supported */
+// }
+
+.auth{
+    .mat-form-field {
+      .mat-input-element {
+        height: 1.25rem;
+        // background-color: #F0F1F1;
+        border-radius: 1rem !important;
+        padding: 0.75rem !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75% !important;
+        border: thin solid #D8D8D8 !important;
+
+        &::placeholder {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .mat-form-field-appearance-fill .mat-form-field-flex {
+      background-color: unset;
+      padding: 0px !important;
+    }
+
+    .mat-form-field-underline {
+      display: none;
+    }
+}
+
+.search-hotel{
+  .mat-ink-bar {
+    background-color: #3f51b5 !important;
+    top: unset;
+  }
+
+  .mat-tab-group .mat-tab-body-wrapper {
+    min-height: 120px;
+  }
+
+  .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+  }
+
+  .mat-tab-body-content {
+    overflow: hidden;
+}
+}
+
+/* carousel btn */
+.carousel-arrow-next{
+  top: 35% !important;
+  right: 5% !important ;
+}
+
+.carousel-arrow-prev{
+  top: 35% !important;
+  left: -1% !important ;
+}
+
+@media only screen and (max-width: 768px) {
+  .mat-h1, .mat-headline, .mat-typography h1 {
+    font: unset;
+    font-family: 'Montserrat Bold', sans-serif;
+    font-size: 22px !important;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  .mat-h1, .mat-headline, .mat-typography h2 {
+    font: unset;
+    font-family: 'Montserrat Semi Bold', sans-serif;
+    font-size: 20PX !important;
+    line-height: 26px;
+  }
+
+  .mat-h1, .mat-headline, .mat-typography h3{
+    font: unset;
+    font-family: 'Montserrat Semi Bold', sans-serif;
+    font-size: 20px;
+    margin: 0 !important;
+  }
+
+  .mat-h5, .mat-typography h5{
+    font-family: 'Montserrat Semi Bold', sans-serif;
+    font-size: 18px !important;
+  }
+
+  .mat-h5, .mat-typography h6{
+    font-family: 'Montserrat Semi Bold', sans-serif;
+    font-size: 16px !important;
+  }
+
+  p{
+    font-size: 14px !important;
+  }
+
+  a{
+    font-size: 14px !important;
+  }
+
+  .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+  }
+
+// button styling for mobile
+  button{
+    &.primary-btn{
+      padding: 10px 30px;
+    }
+  }
+
+  // TAB STYLING
+  .mat-tab-group{
+    .mat-tab-body-wrapper{
+      padding: 0 4px;
+    }
+  }
+
+}
+
+//MAT-Acordian style
+.profile{
+  .mat-expansion-panel-header.mat-expanded {
+    height: 150px;
+  }
+
+  .mat-expansion-panel-header {
+    height: 150px;
+  }
+
+  .mat-form-field-appearance-fill .mat-form-field-label {
+    top: unset;
+    margin-top: unset;
+  }
+}
